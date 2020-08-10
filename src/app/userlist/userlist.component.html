@@ -1,0 +1,21 @@
+
+
+              <body>
+               <div>
+               
+               <form type="text">
+                 <input type="text" class="form-control" name="search" #userSearch />
+                 <p>Input Github Username</p>
+                 <button type="submit" (click)="onSubmit(userSearch.value)">Search</button>
+               </form>
+             </div>
+             
+             <div *ngIf="(users)">
+             <img src={{users.avatar_url}}>
+             <h2>Username: {{users.login}}</h2>
+             <h2>Human Name: {{ users.name }}</h2>
+             <h2>Blog:<a href="{{ users.blog }}">  {{users.blog}}</a></h2>
+             <h2>profile: <a href= "{{ users.html_url}}">{{ users.html_url}}</a></h2>
+             
+            </div>
+          </body>

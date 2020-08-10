@@ -1,0 +1,14 @@
+input {
+    max-width: 300px;
+}
+
+* {
+   
+    background-color: black;
+    color: purple
+}
+
+a {
+    color:blue;
+}
+
